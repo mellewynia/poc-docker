@@ -15,7 +15,8 @@ Christmas ’18 proof of concept to migrate one of my (older) local workflows fr
 
 ### Start (with Docker Compose)
 
-- Navigate to folder with: `docker-compose.yml`
+- Navigate to root folder with: `docker-compose.yml`
+    - __Care__: if you do not nav to root, `docker-compose` may behave unexpectedly
 - `docker-compose build`
 - `docker-compose up`
 - Go to your fav. database tool and login localhost:3306 to init the database.
