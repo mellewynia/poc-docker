@@ -1,7 +1,11 @@
 ok, yeee!!!123
 <?php
 
-$link = new mysqli("api_mysql", "root", "my-secret-pw", "time");
+# DEBUG: echo getenv("MYSQL_ROOT_PASSWORD");
+# or
+# DEBUG: $_ENV['MYSQL_ROOT_PASSWORD'];
+
+$link = new mysqli("api_mysql", "root", $_ENV['MYSQL_ROOT_PASSWORD'], "time");
 
 if ($link->connect_error) {
     die("Connection failed: " . $conn->connect_error);

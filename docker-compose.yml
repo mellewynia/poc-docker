@@ -11,6 +11,9 @@ services:
       - $PWD/app:/var/www/html
     links: 
       - api_mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD
+  
 
   api_mysql:
     image: mysql:5
@@ -20,5 +23,5 @@ services:
     volumes:
       - $PWD/mysql/data:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=my-secret-pw
+      - MYSQL_ROOT_PASSWORD
   

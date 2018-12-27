@@ -1,5 +1,5 @@
 
-Christmas ’18 proof of concept to migrate one of my (older) local workflows from MAMP (Stack: PHP with MYSQL) to Docker.
+Christmas ’18 proof of concept to migrate one of my (older) local workflows from MAMP (Stack: PHP with MYSQL) to Docker. Use .env file for all env specific settings (see .env-example).
 
 # Basics
 
@@ -7,7 +7,6 @@ Christmas ’18 proof of concept to migrate one of my (older) local workflows fr
 - __Docker compose__: is a tool for defining and running multi-container Docker applications. And defines the services that make up your app in `docker-compose.yml` so they can run together in an isolated environment. Gets an app running in one command by just running `docker-compose up`... (after `docker-compose build`).
 
 [More info by __kyo__ on Stack Overflow](https://stackoverflow.com/questions/29480099/docker-compose-vs-dockerfile-which-is-better) and an [Intro to Docker](https://docker-curriculum.com/#docker-on-aws)
-
 
 #### Find IPAddress
 
