@@ -1,9 +1,10 @@
 ok, yeee!!!123
 <?php
 
-# DEBUG: echo getenv("MYSQL_ROOT_PASSWORD");
-# or
 # DEBUG: $_ENV['MYSQL_ROOT_PASSWORD'];
+#
+# DO NOT EVER USE getenv("MYSQL_ROOT_PASSWORD")... 
+# more info on this topic: https://github.com/laravel/framework/issues/7354
 
 $link = new mysqli("api_mysql", "root", $_ENV['MYSQL_ROOT_PASSWORD'], "time");
 
