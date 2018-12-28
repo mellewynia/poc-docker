@@ -11,8 +11,8 @@ services:
       - $PWD/app:/var/www/html
     links: 
       - api_mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD
+    env_file:
+      .env
   
 
   api_mysql:

@@ -8,16 +8,14 @@ Christmas ’18 proof of concept to migrate one of my (older) local workflows fr
 
 [More info by __kyo__ on Stack Overflow](https://stackoverflow.com/questions/29480099/docker-compose-vs-dockerfile-which-is-better) and an [Intro to Docker](https://docker-curriculum.com/#docker-on-aws)
 
-#### Find IPAddress
 
-- `docker ps`
-- `docker inspect <container id> | grep "IPAddress"`
-
-### Start (with Docker Compose)
+# Start
 
 - Create __./.env__ file (based upon __./.env-template__)
+    - __Reminder__: restart docker-compose after update to .env
+    - __Reminder__: .env variables are always strings
 - Navigate to root folder with: `docker-compose.yml`
-    - __Care__: if you do not nav to root, `docker-compose` may behave unexpectedly
+    - __Reminder__: if you do not nav to root, `docker-compose` may behave unexpectedly
 - `docker-compose build`
 - `docker-compose up`
 - Go to your fav. database tool and login localhost:3306 to init the database.
@@ -26,3 +24,8 @@ Christmas ’18 proof of concept to migrate one of my (older) local workflows fr
 
 - `docker-compose up -d` starts containers, detaches tty
 - `docker-compose down` stops containers
+
+##### Find IPAddress
+
+- `docker ps`
+- `docker inspect <container id> | grep "IPAddress"`

@@ -15,7 +15,7 @@ if ($link->connect_error) {
 $sql = "SELECT id, description FROM times";
 $result = $link->query($sql);
 while ($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"] . ", name: " . $row["description"];
+    echo "id: " . $row["id"] . ", description: " . $row["description"];
 }
 
 phpinfo();
