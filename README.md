@@ -15,6 +15,7 @@ Christmas ’18 proof of concept to migrate one of my (older) local workflows fr
 
 ### Start (with Docker Compose)
 
+- Create __./.env__ file (based upon __./.env-template__)
 - Navigate to root folder with: `docker-compose.yml`
     - __Care__: if you do not nav to root, `docker-compose` may behave unexpectedly
 - `docker-compose build`
